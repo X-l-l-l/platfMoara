@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div class="message-container">
+      {% with messages = get_flashed_messages() %} {% if messages %} {% for
+      message in messages %} {{ message }} {% endfor %} {% endif %} {% endwith
+      %}
+    </div>
+    <form method="post" >
+        {%for table in table_list%}
+            <input type="submit" name="{{ table }}" value="{{ table }}">
+        {% endfor %}
+    </form>
+  </body>
+</html>
