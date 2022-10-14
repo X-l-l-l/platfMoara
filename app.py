@@ -13,7 +13,6 @@ credentials = Credentials()
 credentials.add_cred("rares", "1234")
 credentials.add_cred("admin", "admin")
 
-
 def connect():
     conn = None
     try:
